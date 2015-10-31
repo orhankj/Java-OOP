@@ -21,7 +21,7 @@ public class PurchaseManager {
 
         if(product instanceof FoodProduct){
             FoodProduct food = (FoodProduct)product;
-            if(food.getExpirationDate().before(new Date())){
+            if(food.getExpirationDate().after(new Date())){
                 throw new DateTimeException("This product is expired!");
             }
 

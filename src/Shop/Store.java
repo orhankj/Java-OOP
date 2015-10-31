@@ -10,10 +10,10 @@ public class Store {
 
     public static void main(String[] args) {
         List<Product> products = new ArrayList<>();
-        FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, AgeRestriction.Adult,new Date(2020,4,12));
+        FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, AgeRestriction.Adult,new Date(2000,4,12));
         try{
 
-            Customer pecata = new Customer("Pecata", 17, 30.00);
+            Customer pecata = new Customer("Pecata", 27, 44);
             PurchaseManager.processPurchase( cigars,pecata);
 
             products.add(cigars);
